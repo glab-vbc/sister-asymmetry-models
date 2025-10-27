@@ -1,0 +1,92 @@
+A_dpd: 10
+block_size: 1000
+bp_monomer: 200
+ccohesin_bond_k: 0.6
+ccohesin_bond_length: 1
+ccohesin_motility: dynamic
+ccohesin_nb_fixed_sides: 1
+ccohesin_fixed_sides_conf: opposite
+ccohesin_distribution: expon
+#ccohesin_misalignment_distribution_bp:
+#    exponnorm:   
+#        params:
+#          scale_expon_bp: 500
+#          scale_norm_bp: 1000
+#        population_frac: 1.0
+#ccohesin_anchor_diffusion_distribution_bp:
+#    norm: 
+#        params: 
+#            scale_bp: 
+#            - 50000
+#            - 100000
+#        population_frac: 1.0
+chain_length: 500000
+density: 0.1
+dt: 0.05
+freq_ccohesin_bp: null
+bp_dist_ccohesin_anchors_10: #intrapair_freq_ccohesin_bp:
+#- 200
+#- 25000
+- 50000
+#- 75000
+- 100000
+#- 125000
+- 150000
+#- 175000
+#- 200000
+#- 225000
+#- 250000
+#- 275000
+#- 300000
+#- 600000
+bp_dist_ccohesin_anchors_01: #interpair_freq_ccohesin_bp:
+#- 50000
+#- 75000
+#- 100000
+#- 125000
+#- 150000
+#- 175000
+- 200000
+#- 225000
+- 250000
+#- 275000
+- 300000
+#- 325000
+#- 350000
+#- 375000
+#- 400000
+#- 425000
+#- 450000
+#- 475000
+#- 500000
+#- 800000
+nb_mcmc_moves_per_block: null #2000
+max_mcmc_step: null #10000
+gamma_dpd: 10
+init_config: null #/groups/goloborodko/projects/lab/sisterChromatids2020/dynamic_cohesion_hoomd_paper/model-dynamic_ccohesinNbFixedSides-1_ccohesinFixedSidesConf-opposite_ccohesinDistribution-expon_intrapairFreqCcohesinBp-600000_interpairFreqCcohesinBp-800000_nbMcmcMovesPerBlock-2000_maxMcmcStep-10000_nbBlocks-1_blockSize-1000/0/trajectory.gsd
+logfilename: log.out
+loglevel: info
+nb_blocks: 20000 # 100
+#nb_ccohesin_same_anchor: 1
+nb_replicates: 1
+outdir: /groups/goloborodko/projects/lab/sisterChromatids2020/mixture_semianchored_diffusive_cohesion_hoomd_paper/
+#outdir: /groups/goloborodko/projects/lab/sisterChromatids2020/trains_semianchored_cohesion_hoomd_paper/
+#outdir: /groups/goloborodko/projects/lab/sisterChromatids2020/diffusive_semianchored_cohesion_hoomd_paper/
+#outdir: /groups/goloborodko/projects/lab/sisterChromatids2020/dynamic_cohesion_hoomd_paper/
+#outdir: /groups/goloborodko/projects/lab/sisterChromatids2020/test_hoomd_dpd_params/
+#outdir: /groups/goloborodko/projects/lab/sisterChromatids2020/test_1d_3d_params/
+#outdir: /scratch-cbe/users/flavia.corsi/test_1d_3d_params/
+overwrite: true
+#logbuffer: 1
+polymer_bond_k: 100
+polymer_bond_length: 1
+#add_loops: True
+#avg_loop_length_bp: 10000
+#max_percentage_loop_coverage: 0.1
+#ecohesin_bond_k: 0.6
+#ecohesin_bond_length: 1
+#cohesion_trains: true
+#semianchored_cohesion_trains: true
+diffusive_links_between_semianchored_pairs: true
+nb_diffusive_ccohesin_01: 2
+nb_diffusive_ccohesin_10: 2

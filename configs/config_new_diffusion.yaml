@@ -1,0 +1,103 @@
+A_dpd: 10
+block_size: 
+#- 10
+#- 100
+- 1000
+#- 10000
+bp_monomer: 200
+ccohesin_bond_k: 0.6
+ccohesin_bond_length: 1
+ccohesin_motility: dynamic
+ccohesin_nb_fixed_sides: 0
+ccohesin_fixed_sides_conf: null
+ccohesin_distribution: null
+ccohesin_misalignment_distribution_bp:
+    expon:   
+        params:
+          scale_bp: 100000
+        population_frac: 1.0
+chain_length: 500000
+density: 0.1
+dt: 0.05
+freq_ccohesin_bp: 
+- 100000
+#- 50000
+#- 150000
+#- 200000
+#- 500000
+#- 1000000
+bp_dist_ccohesin_anchors_10: null #intrapair_freq_ccohesin_bp:
+#- 200
+#- 25000
+#- 50000
+#- 75000
+#- 100000
+#- 125000
+#- 150000
+#- 175000
+#- 200000
+#- 225000
+#- 250000
+#- 275000
+#- 300000
+#- 600000
+bp_dist_ccohesin_anchors_01: null #interpair_freq_ccohesin_bp:
+#- 50000
+#- 75000
+#- 100000
+#- 125000
+#- 150000
+#- 175000
+#- 200000
+#- 225000
+#- 250000
+#- 275000
+#- 300000
+#- 325000
+#- 350000
+#- 375000
+#- 400000
+#- 425000
+#- 450000
+#- 475000
+#- 500000
+#- 800000
+nb_mcmc_moves_per_block: 
+#- 10 #2000
+#- 20
+#- 30
+#- 50
+#- 100
+#- 300
+- 1000
+- 100
+max_mcmc_step:
+#- 1
+#- 3
+#- 5
+#- 10
+#- 25 #10000
+- 50
+- 5
+gamma_dpd: 10
+init_config: null #/groups/goloborodko/projects/lab/sisterChromatids2020/dynamic_cohesion_hoomd_paper/model-dynamic_ccohesinNbFixedSides-1_ccohesinFixedSidesConf-opposite_ccohesinDistribution-expon_intrapairFreqCcohesinBp-600000_interpairFreqCcohesinBp-800000_nbMcmcMovesPerBlock-2000_maxMcmcStep-10000_nbBlocks-1_blockSize-1000/0/trajectory.gsd
+logfilename: log.out
+loglevel: info
+nb_blocks: 20000 #100000 #150000 #10000 #1000 # 100
+#nb_ccohesin_same_anchor: 1
+nb_replicates: 3
+#outdir: /groups/goloborodko/projects/lab/sisterChromatids2020/sororin_depl_hoomd_paper/expon_deposition_plus_diffusion_cohesion/
+outdir: /groups/goloborodko/projects/lab/sisterChromatids2020/test_mcmc_diffusion/
+#outdir: /groups/goloborodko/projects/lab/sisterChromatids2020/dynamic_cohesion_hoomd_paper/
+#outdir: /groups/goloborodko/projects/lab/sisterChromatids2020/test_hoomd_dpd_params/
+#outdir: /groups/goloborodko/projects/lab/sisterChromatids2020/test_1d_3d_params/
+#outdir: /scratch-cbe/users/flavia.corsi/test_1d_3d_params/
+overwrite: true
+#logbuffer: 1
+polymer_bond_k: 100
+polymer_bond_length: 1
+#add_loops: True
+#avg_loop_length_bp: 10000
+#max_percentage_loop_coverage: 0.1
+#ecohesin_bond_k: 0.6
+#ecohesin_bond_length: 1
